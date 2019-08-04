@@ -160,5 +160,11 @@ section{
 }
 
 .about-me p{
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+}
+
+footer{
+    background: #ffffff;
+    margin-top: 15vh;
+    padding: 2% 15%;
 }
