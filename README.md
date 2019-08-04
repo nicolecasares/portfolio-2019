@@ -1,2 +1,1 @@
-# portfolio2019
-# portfolio-2019
+This is the code for my developer portfolio 2019. 
