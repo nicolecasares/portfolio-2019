@@ -1,0 +1,164 @@
+body{
+    background: url('images/watercolor.jpg') no-repeat fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    transition: ease .8s all;
+    padding: 5px 10px;
+    border:  1px solid #000000
+}
+
+a:visited{
+    color: #000;
+}
+
+a:hover{
+    color: #8500D4;
+    font-weight: 700;
+    border:  1px solid #8500D4;
+    background: #68cbf0;
+}
+
+main{
+ height: 85vh;
+ width: 100%;
+ background: white;
+ margin: 15% 0 0 0;  
+}
+
+@media all and (min-width: 500px){
+    main{
+        margin: 10% 0 0 0;
+    }
+}
+
+@media all and (min-width: 1000px){
+    main{
+        margin: 5% 0 0 0;
+        width: 90%;
+    }
+}
+
+header{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+}
+
+@media all and (min-width: 500px){
+    header{
+        flex-direction: row;
+    }
+}
+
+.info {
+    /* margin-right: -10%; for desktop*/
+    z-index: 99;
+ 
+}
+
+@media all and (min-width: 500px){
+    .info{
+        margin-right: -10%;
+    }
+}
+
+@media all and (min-width: 1000px){
+    .info{
+        margin-left: 20%;
+    }
+}
+
+
+
+.info h1{
+    font-size: 2.3em;
+}
+
+@media all and (min-width: 1000px){
+    .info h1{
+        font-size: 3.3em;
+    }
+}
+
+.info h2{
+    color: #8500D4;
+    font-size: 1.3em;
+    margin-bottom: 10%;
+}
+
+.contact{
+    margin: 10% 0 0 0 ;
+}
+
+.contact h2, .work h2{ 
+    color: #5f5f5f;
+    font-weight: 300;
+    margin: 0;
+    margin: 8% 0 2%;
+    
+}
+
+.image-mask
+{
+     background-size: cover;
+     background-image: url('images/watercolor.jpg');
+     background-position: center;
+     text-align: center;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;    
+     font: 700 39vw 'Open Sans', sans-serif;
+     font-family: 'Montserrat', sans-serif;
+     order: -1;
+
+}
+
+@media all and (min-width: 500px){
+    .image-mask{
+        order: 2;
+    }
+}
+
+section{
+    margin-top: 15vh;
+    width: 90%;
+    /* margin:  15vh auto; */
+    background: #ffffff;
+    margin: 15vh auto auto 0;
+    
+}
+
+.about-me{
+    padding: 10% 15%;
+    width: 46%;
+
+}
+
+.about-me h1{
+    font-size: 2.3em;
+    color: #8500D4;
+}
+
+.about-me h2{
+    color: #000000;
+    font-size: 1.3em;
+}
+
+.about-me p{
+    margin-bottom: 5%;
+}
