@@ -114,18 +114,21 @@ header{
     
 }
 
-.image-mask
-{
+.image-mask{
      background-size: cover;
-     background-image: url('images/watercolor.jpg');
-     background-position: center;
+     background: url('images/watercolor.jpg') no-repeat fixed;
+     /* background-position: center; */
      text-align: center;
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;    
      font: 700 39vw 'Open Sans', sans-serif;
      font-family: 'Montserrat', sans-serif;
      order: -1;
+     transition: ease .5s all;
+}
 
+.image-mask:hover{
+    background-position: center;
 }
 
 @media all and (min-width: 500px){
