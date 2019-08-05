@@ -4,10 +4,21 @@ body{
     height: 100%;
     margin: 0;
     font-family: 'Roboto Slab', serif;
+    font-family: 'Lora', serif;
 }
 
 h1, h2, p{
     margin: 0;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+img{
+    display: inline-block;
+    max-width: 100%;
 }
 
 a{
@@ -16,7 +27,7 @@ a{
     color: #000000;
     transition: ease .8s all;
     padding: 5px 10px;
-    border:  1px solid #000000
+    border:  1px solid #00000059;
 }
 
 a:visited{
@@ -29,6 +40,54 @@ a:hover{
     border:  1px solid #8500D4;
     background: #68cbf0;
 }
+
+  
+ 
+  .hamburger-container #menu-toggle {
+    display: none;
+  }
+  .hamburger-container .menu-toggle-label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    margin: 0 5%;
+    padding-top: 2%;
+    width: 70px;
+  }
+  .hamburger-container .menu-toggle-label:hover .line {
+    transition: all 0.5s ease;
+    background: #8500D4;
+
+  }
+  .hamburger-container .menu-toggle-label:hover .line:nth-child(1) {
+    width: 70px;
+  }
+  .hamburger-container .menu-toggle-label:hover .line:nth-child(2) {
+    width: 70px;
+    opacity: 0.7;
+  }
+  .hamburger-container .menu-toggle-label:hover .line:nth-child(3) {
+    width: 70px;
+  }
+  .hamburger-container .menu-toggle-label .line {
+    transition: all 0.5s ease;
+    margin: 3px 0;
+    height: 5px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #117A65;
+  }
+  .hamburger-container .menu-toggle-label .line:nth-child(1) {
+    width: 50px;
+  }
+  .hamburger-container .menu-toggle-label .line:nth-child(2) {
+    width: 36px;
+  }
+  .hamburger-container .menu-toggle-label .line:nth-child(3) {
+    width: 25px;
+  }
 
 main{
  height: 85vh;
@@ -147,14 +206,42 @@ section{
 }
 
 .about-me{
-    padding: 10% 15%;
-    width: 46%;
+    padding: 10% 9%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@media all and (min-width: 766px){
+    .about-me{
+        flex-direction: row;
+    }
+
+}
+
+.about-me-description {
+    
+}
+
+@media all and (min-width: 766px){
+    .about-me-description {
+        width: 40%;
+        max-width: 700px;
+    }
 
 }
 
 .about-me h1{
     font-size: 2.3em;
     color: #8500D4;
+    margin-bottom: 2%;
+}
+
+@media all and (min-width: 766px){
+    .about-me h1{
+        font-size: 3.3em;  
+    }
+
 }
 
 .about-me h2{
@@ -162,8 +249,21 @@ section{
     font-size: 1.3em;
 }
 
+.about-me .about-me-summery {
+    margin-bottom: 10%;
+}
+
 .about-me p{
     margin-bottom: 3%;
+}
+
+.skills{
+    margin-bottom: 3%;
+
+}
+
+.self img{
+    background: blue;
 }
 
 footer{
